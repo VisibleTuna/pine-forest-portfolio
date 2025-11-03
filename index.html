@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website showcasing web development projects and skills">
+    <title>Gwendoynn Dubrow - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Gwendoynn Dubrow</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Welcome to My Digital Forest</h2>
+                <p class="hero-subtitle">A developer crafting digital experiences under the moonlight</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="stars"></div>
+                <div class="trees"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Personal Background</h3>
+                        <p>I'm a passionate student who loves learning and applying new technologies through projects. With a background in computer science and a deep appreciation for nature, I bring a unique perspective to web development.</p>
+                        
+                        <h3>Education</h3>
+                        <p>I am currently a student at the New Jersey Institute of Technology, I am currentlt persuing my Bachelors' degree in Electrical and Computer Engineering Technologies. I'm constantly learning and staying up-to-date with the newest technologies and learning how to apply them.</p>
+                        
+                        <h3>Interests</h3>
+                        <p>When I'm not coding, you'll find me backpacking, crocheting, or listening to music. I believe that inspiration comes from the natural world and that great design should feel organic and intuitive.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="placeholder-image" role="img" aria-label="Professional headshot of the developer">
+                            <span>Your Photo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image" role="img" aria-label="Screenshot of Project Title 1">
+                                <span>Project Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project Title 1</h3>
+                            <p>Brief description of your first project. Explain what it does, the technologies used, and what makes it special.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image" role="img" aria-label="Screenshot of Project Title 2">
+                                <span>Project Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project Title 2</h3>
+                            <p>Brief description of your second project. Explain what it does, the technologies used, and what makes it special.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image" role="img" aria-label="Screenshot of Project Title 3">
+                                <span>Project Screenshot</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project Title 3</h3>
+                            <p>Brief description of your third project. Explain what it does, the technologies used, and what makes it special.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Backend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon"></span>
+                                <span>grd@njit.edu</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"></span>
+                                <span>+1 (732) 208-8852</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"></span>
+                                <span>Dunellen, New Jersey</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form" role="form" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required aria-describedby="name-error" aria-invalid="false">
+                            <span class="error-message" id="name-error" role="alert" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required aria-describedby="email-error" aria-invalid="false">
+                            <span class="error-message" id="email-error" role="alert" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" aria-describedby="subject-help">
+                            <div id="subject-help" class="sr-only">Optional field for message subject</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required aria-describedby="message-error" aria-invalid="false"></textarea>
+                            <span class="error-message" id="message-error" role="alert" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" aria-describedby="form-help">Send Message</button>
+                        <div id="form-help" class="sr-only">Required fields are marked with an asterisk (*)</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>Built with â¤ï¸ and inspired by pine forests at night</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
