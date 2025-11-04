@@ -13,25 +13,28 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #0a1929 0%, #1a2332 50%, #0f1419 100%);
-    color: #e8f4f8;
+    background-color: var(--navy-dark);
+    background-image: 
+        radial-gradient(ellipse at 50% 20%, var(--navy-light) 0%, transparent 70%),
+        linear-gradient(180deg, var(--navy-dark) 0%, var(--navy-medium) 100%);
+    color: var(--moonlight-white);
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Pine Forest Night Color Palette */
 :root {
-    --navy-dark: #0a1929;
-    --navy-medium: #1a2332;
-    --navy-light: #2a3441;
-    --forest-dark: #2d5016;
-    --forest-medium: #3d6b1f;
-    --forest-light: #4a7c2a;
-    --moonlight-white: #e8f4f8;
-    --moonlight-gray: #b8c6db;
-    --amber-highlight: #d4a574;
-    --amber-dark: #b8945f;
-    --mist-overlay: rgba(184, 198, 219, 0.1);
+    --navy-dark: #0c141f;
+    --navy-medium: #142031;
+    --navy-light: #1f2f45;
+    --forest-dark: #1e3a1f;
+    --forest-medium: #2a5230;
+    --forest-light: #3a6b46;
+    --moonlight-white: #f0f8ff;
+    --moonlight-gray: #a8b8c8;
+    --amber-highlight: #e6b88a;
+    --amber-dark: #c89f6c;
+    --mist-overlay: rgba(168, 184, 200, 0.1);
 }
 
 /* Header and Navigation */
@@ -128,7 +131,7 @@ header {
     justify-content: center;
     position: relative;
     padding: 0 2rem;
-    background: radial-gradient(ellipse at center, rgba(45, 80, 22, 0.1) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(58, 107, 70, 0.15) 0%, transparent 60%);
 }
 
 .hero-content {
@@ -181,7 +184,7 @@ header {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(61, 107, 31, 0.4);
+    box-shadow: 0 6px 20px rgba(58, 107, 70, 0.4), 0 0 15px var(--forest-light);
 }
 
 .btn-secondary {
@@ -211,19 +214,26 @@ header {
     width: 100%;
     height: 100%;
     background-image: 
-        radial-gradient(2px 2px at 20px 30px, var(--moonlight-white), transparent),
-        radial-gradient(2px 2px at 40px 70px, var(--amber-highlight), transparent),
+        radial-gradient(1.5px 1.5px at 20px 30px, var(--moonlight-white), transparent),
+        radial-gradient(1.5px 1.5px at 40px 70px, var(--amber-highlight), transparent),
         radial-gradient(1px 1px at 90px 40px, var(--moonlight-white), transparent),
         radial-gradient(1px 1px at 130px 80px, var(--amber-highlight), transparent),
-        radial-gradient(2px 2px at 160px 30px, var(--moonlight-white), transparent);
+        radial-gradient(1.5px 1.5px at 160px 30px, var(--moonlight-white), transparent),
+        radial-gradient(1px 1px at 220px 120px, var(--moonlight-white), transparent),
+        radial-gradient(1.5px 1.5px at 250px 60px, var(--amber-highlight), transparent);
     background-repeat: repeat;
     background-size: 200px 100px;
-    animation: twinkle 4s ease-in-out infinite alternate;
+    animation: twinkle 4s ease-in-out infinite alternate, twinkle-fast 2.5s ease-in-out infinite alternate;
 }
 
 @keyframes twinkle {
-    0% { opacity: 0.3; }
+    0% { opacity: 0.5; }
     100% { opacity: 1; }
+}
+
+@keyframes twinkle-fast {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.8; }
 }
 
 .trees {
@@ -232,7 +242,17 @@ header {
     width: 100%;
     height: 200px;
     background: linear-gradient(to top, var(--forest-dark) 0%, transparent 100%);
-    clip-path: polygon(0% 100%, 10% 60%, 20% 80%, 30% 40%, 40% 70%, 50% 30%, 60% 65%, 70% 45%, 80% 75%, 90% 50%, 100% 85%, 100% 100%);
+    clip-path: polygon(0% 100%, 0% 80%, 5% 75%, 10% 85%, 15% 70%, 20% 80%, 25% 65%, 30% 75%, 35% 60%, 40% 70%, 45% 85%, 50% 70%, 55% 80%, 60% 60%, 65% 75%, 70% 55%, 75% 70%, 80% 50%, 85% 65%, 90% 45%, 95% 60%, 100% 40%, 100% 100%);
+    animation: sway 30s ease-in-out infinite alternate;
+}
+
+@keyframes sway {
+    0% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
 }
 
 /* Section Styles */
@@ -307,7 +327,7 @@ header {
 }
 
 .project-card {
-    background: rgba(26, 35, 50, 0.6);
+    background: rgba(31, 47, 69, 0.8);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -316,7 +336,7 @@ header {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4), 0 0 10px var(--mist-overlay);
 }
 
 .project-image {
@@ -494,7 +514,7 @@ header {
 
 /* Contact Form */
 .contact-form {
-    background: rgba(26, 35, 50, 0.6);
+    background: rgba(31, 47, 69, 0.8);
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--mist-overlay);
